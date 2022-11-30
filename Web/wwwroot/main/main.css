@@ -1,0 +1,14 @@
+#datatables_buttons_info {
+    background-color: darkorchid;
+}
+#datatables_buttons_info h2{
+    background-color: rebeccapurple;
+}
+
+#example1_previous a{
+    color: white;
+}
+
+.page-link{
+    color: white;
+}
