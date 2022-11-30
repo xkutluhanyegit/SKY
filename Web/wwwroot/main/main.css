@@ -12,3 +12,14 @@
 .page-link{
     color: white;
 }
+
+#add-btn{
+    position: fixed;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+    
+}
+
+

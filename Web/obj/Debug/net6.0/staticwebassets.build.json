@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZFg/M8ankgbxf807WywNVcZaWMWW4CjAGLAF9aGrZjU=",
+  "Hash": "THZ3ND6y147LAXCN4KSGjzgQ5Pn1tik0s+P4MDDdgoY=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -916,6 +916,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\dist\\img\\prod-5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\SKY\\Desktop\\Sky\\Web\\wwwroot\\dist\\img\\sky-circle-logo.png",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SKY\\Desktop\\Sky\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "dist/img/sky-circle-logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dist\\img\\sky-circle-logo.png"
     },
     {
       "Identity": "C:\\Users\\SKY\\Desktop\\Sky\\Web\\wwwroot\\dist\\img\\user1-128x128.jpg",
