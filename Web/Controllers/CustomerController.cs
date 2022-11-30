@@ -8,16 +8,17 @@ using Microsoft.Extensions.Logging;
 
 namespace Web.Controllers
 {
-    [Route("[controller]")]
-    public class deneme : Controller
+    [Route("musteri")]
+    public class CustomerController : Controller
     {
-        private readonly ILogger<deneme> _logger;
+        private readonly ILogger<CustomerController> _logger;
 
-        public deneme(ILogger<deneme> logger)
+        public CustomerController(ILogger<CustomerController> logger)
         {
             _logger = logger;
         }
 
+        [Route("musteri-listesi")]
         public IActionResult Index()
         {
             return View();
