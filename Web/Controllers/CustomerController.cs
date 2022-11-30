@@ -23,6 +23,12 @@ namespace Web.Controllers
         {
             return View();
         }
+        [Route("musteri-ekle")]
+        public IActionResult Add()
+        {
+          //TODO: Implement Realistic Implementation
+          return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

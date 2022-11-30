@@ -1,1 +1,36 @@
-<h1>Müşteri Listesi</h1>
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Müşteri Listesi</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped" >
+            <thead class="table-dark">
+                <tr>
+                    <th>Müşteri Ünvanı</th>
+                    <th>Adres</th>
+                    <th>Vergi Numarası</th>
+                    <th>Vergi Dairesi</th>
+                    <th>Mail</th>
+                    <th>İletişim Numarası</th>
+                </tr>
+            </thead>
+            <tbody class="table-hover">
+                
+            </tbody>
+            <tfoot class="table-dark">
+                <tr>
+                    <th>Müşteri Ünvanı</th>
+                    <th>Adres</th>
+                    <th>Vergi Numarası</th>
+                    <th>Vergi Dairesi</th>
+                    <th>Mail</th>
+                    <th>İletişim Numarası</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
+
+<a asp-controller="customer" asp-action="add" id="add-btn" class="btn btn-success "><i class="fas fa-plus"></i></a>
