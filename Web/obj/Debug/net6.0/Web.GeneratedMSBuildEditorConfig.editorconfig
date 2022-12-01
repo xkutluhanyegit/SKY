@@ -8,53 +8,53 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Web
 build_property.RootNamespace = Web
-build_property.ProjectDir = /home/k/Desktop/SKY/Web/
+build_property.ProjectDir = c:\Users\SKY\Desktop\Sky\Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/k/Desktop/SKY/Web
+build_property.MSBuildProjectDirectory = c:\Users\SKY\Desktop\Sky\Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/k/Desktop/SKY/Web/Views/Brand/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnJhbmQvaW5kZXguY3NodG1s
+[c:/Users/SKY/Desktop/Sky/Web/Views/Brand/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/k/Desktop/SKY/Web/Views/Customer/add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvYWRkLmNzaHRtbA==
+[c:/Users/SKY/Desktop/Sky/Web/Views/Customer/add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcYWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/k/Desktop/SKY/Web/Views/Customer/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvaW5kZXguY3NodG1s
+[c:/Users/SKY/Desktop/Sky/Web/Views/Customer/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/k/Desktop/SKY/Web/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[c:/Users/SKY/Desktop/Sky/Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/k/Desktop/SKY/Web/Views/Order/add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvYWRkLmNzaHRtbA==
+[c:/Users/SKY/Desktop/Sky/Web/Views/Order/add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcYWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/k/Desktop/SKY/Web/Views/Order/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvaW5kZXguY3NodG1s
+[c:/Users/SKY/Desktop/Sky/Web/Views/Order/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/k/Desktop/SKY/Web/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[c:/Users/SKY/Desktop/Sky/Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/k/Desktop/SKY/Web/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+[c:/Users/SKY/Desktop/Sky/Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/k/Desktop/SKY/Web/Views/Shopping/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hvcHBpbmcvaW5kZXguY3NodG1s
+[c:/Users/SKY/Desktop/Sky/Web/Views/Shopping/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/k/Desktop/SKY/Web/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[c:/Users/SKY/Desktop/Sky/Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/k/Desktop/SKY/Web/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[c:/Users/SKY/Desktop/Sky/Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
