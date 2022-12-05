@@ -1,10 +1,11 @@
+@model List<Entities.Concrete.Customer>
 <div class="card">
     <div class="card-header">
         <h3 class="card-title">Müşteri Listesi</h3>
     </div>
     <!-- /.card-header -->
     <div class="card-body">
-        <table id="example1" class="table table-bordered table-striped" >
+        <table id="example1" class="table table-bordered table-striped">
             <thead class="table-dark">
                 <tr>
                     <th>Müşteri Ünvanı</th>
@@ -13,10 +14,22 @@
                     <th>Vergi Dairesi</th>
                     <th>Mail</th>
                     <th>İletişim Numarası</th>
+                    <th>Detay</th>
                 </tr>
             </thead>
             <tbody class="table-hover">
-                
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CustomerName.ToUpper()</td>
+                        <td>@item.CustomerAddress.ToUpper()</td>
+                        <td>@item.CustomerTaxNumber.ToUpper()</td>
+                        <td>@item.CustomerTaxOffice.ToUpper()</td>
+                        <td>@item.CustomerMail.ToUpper()</td>
+                        <td>@item.CustomerPhone.ToUpper()</td>
+                        <td><a asp-controller="customer" asp-action="detail" asp-route-id="@item.id"><i class="fas fa-chevron-right"></i></a></td>
+                    </tr>
+                }
             </tbody>
             <tfoot class="table-dark">
                 <tr>
@@ -26,6 +39,7 @@
                     <th>Vergi Dairesi</th>
                     <th>Mail</th>
                     <th>İletişim Numarası</th>
+                    <th>Detay</th>
                 </tr>
             </tfoot>
         </table>
