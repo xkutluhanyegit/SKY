@@ -24,6 +24,12 @@ namespace Business.Concrete
             return new SuccessResult(Messages.AddedMessage);
         }
 
+        public IResult Delete(int id)
+        {
+            _customerDal.Delete(_customerDal.Get(c=>c.id == id));
+            return new SuccessResult(Messages.DeletedMessage);
+        }
+
         public IDataResult<List<Customer>> GetAll()
         {
             var result = _customerDal.GetAll();
@@ -34,6 +40,12 @@ namespace Business.Concrete
         {
             var result = _customerDal.Get(c=>c.id == id);
             return new SuccessDataResult<Customer>(result);
+        }
+
+        public IResult Update(Customer customer)
+        {
+            _customerDal.Update(customer);
+            return new SuccessResult(Messages.UpdateMessage);
         }
     }
 }

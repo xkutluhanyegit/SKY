@@ -4,7 +4,7 @@
 
 namespace DataAccess.Migrations
 {
-    public partial class @base : Migration
+    public partial class def : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,8 +14,7 @@ namespace DataAccess.Migrations
                 {
                     id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    BrandName = table.Column<string>(type: "TEXT", nullable: false),
-                    BrandOrigin = table.Column<string>(type: "TEXT", nullable: false)
+                    BrandName = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

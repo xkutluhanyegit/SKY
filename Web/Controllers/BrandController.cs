@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -22,6 +23,22 @@ namespace Web.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        [Route("marka-ekle")]
+        [HttpGet]
+        public IActionResult add()
+        {
+          //TODO: Implement Realistic Implementation
+          return View();
+        }
+
+        [Route("marka-ekle")]
+        [HttpPost]
+        public IActionResult add(Brand brand)
+        {
+          
+          return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

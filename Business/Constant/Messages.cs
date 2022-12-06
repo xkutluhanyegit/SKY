@@ -8,6 +8,8 @@ namespace Business.Constant
     public static class Messages
     {
         public static string AddedMessage = "Ekleme işlemi başarıyla gerçekleşti!";
+        public static string UpdateMessage = "Güncelleme işlemi başarıyla gerçekleşti!";
+        public static string DeletedMessage = "Silme işlemi başarıyla gerçekleşti!";
         public static string ListedMessage = "Listeleme işlemi başarıyla gerçekleşti!";
         
     }

@@ -66,6 +66,41 @@ namespace Web.Controllers
           return View();
         }
 
+        [Route("musteri-sil")]
+        public IActionResult Delete(int id)
+        {
+          var res = _customerService.Delete(id);
+          if (res.Success)
+          {
+            return RedirectToAction("index","customer");
+          }
+          return View();
+        }
+
+        [Route("musteri-güncelle")]
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+          var res = _customerService.GetById(id);
+          if (res.Success)
+          {
+            return View(res.Data);
+          }
+          return View();
+        }
+
+        [Route("musteri-güncelle")]
+        [HttpPost]
+        public IActionResult Update(Customer customer)
+        {
+          var res = _customerService.Update(customer);
+          if (res.Success)
+          {
+            return RedirectToAction("index","customer");
+          }
+          return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

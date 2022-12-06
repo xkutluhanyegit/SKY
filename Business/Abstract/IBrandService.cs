@@ -7,12 +7,12 @@ using Entities.Concrete;
 
 namespace Business.Abstract
 {
-    public interface ICustomerService
+    public interface IBrandService
     {
-        IResult Add(Customer customer);
-        IDataResult<List<Customer>> GetAll();
-        IDataResult<Customer> GetById(int id);
+        IResult Add(Brand brand);
+        IDataResult<List<Brand>> GetAll();
+        IDataResult<Brand> GetById(int id);
         IResult Delete(int id);
-        IResult Update(Customer customer);
+        IResult Update(Brand brand);
     }
 }

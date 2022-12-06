@@ -27,10 +27,6 @@ namespace DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("BrandOrigin")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.HasKey("id");
 
                     b.ToTable("brands");

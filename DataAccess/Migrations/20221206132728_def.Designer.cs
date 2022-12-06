@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(EfDbContext))]
-    [Migration("20221202084655_base")]
-    partial class @base
+    [Migration("20221206132728_def")]
+    partial class def
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,10 +26,6 @@ namespace DataAccess.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("BrandName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("BrandOrigin")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

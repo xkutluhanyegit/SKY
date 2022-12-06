@@ -10,6 +10,5 @@ namespace Entities.Concrete
     {
         public int id { get; set; }
         public string BrandName { get; set; }
-        public string BrandOrigin { get; set; }
     }
 }

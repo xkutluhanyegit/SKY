@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\SKY\Desktop\Sky\Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/SKY/Desktop/Sky/Web/Views/Brand/add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/SKY/Desktop/Sky/Web/Views/Brand/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -29,6 +33,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/SKY/Desktop/Sky/Web/Views/Customer/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKY/Desktop/Sky/Web/Views/Customer/update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcdXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SKY/Desktop/Sky/Web/Views/Home/Index.cshtml]

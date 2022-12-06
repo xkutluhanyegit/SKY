@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3H0XqthQ9J0W0tYOFXUYnebA+eMiOde8boNNsk2GQJHcSz6ZxqM/tTkeEvjGifWAuHOdM1uL/J/YxovM432Otw==",
+  "dgSpecHash": "9r9IhwlVTPPGagxQl/NQj3lK1BC+Lta+2KM4s2eBhWmaeFegcoEWvMZvEc0NjSfhQYSXkfHAM8LclkuPhU4EtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SKY\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.11\\microsoft.entityframeworkcore.6.0.11.nupkg.sha512",
     "C:\\Users\\SKY\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.11\\microsoft.entityframeworkcore.abstractions.6.0.11.nupkg.sha512",
