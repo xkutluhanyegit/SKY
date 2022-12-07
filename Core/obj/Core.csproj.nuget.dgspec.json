@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj": {}
+    "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj": {
+    "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\SKY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SKY\\Desktop\\SKY\\Core\\obj\\",
+        "outputPath": "C:\\Users\\SKY\\Desktop\\Sky\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SKY\\AppData\\Roaming\\NuGet\\NuGet.Config"

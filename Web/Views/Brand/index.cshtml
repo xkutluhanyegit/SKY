@@ -1,22 +1,38 @@
+@model List<Entities.Concrete.Brand>
 <div class="card">
     <div class="card-header">
         <h3 class="card-title">Marka Listesi</h3>
     </div>
     <!-- /.card-header -->
     <div class="card-body">
-        <table id="example1" class="table table-bordered table-striped" >
+        <table id="example1" class="table table-bordered table-striped">
             <thead class="table-dark">
                 <tr>
+                    <th>#</th>
                     <th>Marka</th>
-                    
+                    <th>Sil</th>
+
                 </tr>
             </thead>
             <tbody class="table-hover">
-                
+                @{
+                    int count = 1;
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td style=" width:50px">@count</td>
+                            <td>@item.BrandName</td>
+                            <th style="width: 50px;"><a class="text-center text-danger" asp-action="delete" asp-controller="brand" asp-route-id="@item.id"><i class="fas fa-trash"></i></a></th>
+                        </tr>
+                        count++;
+                    }
+                }
             </tbody>
             <tfoot class="table-dark">
                 <tr>
+                    <th>#</th>
                     <th>Marka</th>
+                    <th>Sil</th>
                 </tr>
             </tfoot>
         </table>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SKY\\Desktop\\SKY\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\SKY\\Desktop\\Sky\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj": {
+    "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\SKY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SKY\\Desktop\\SKY\\Core\\obj\\",
+        "outputPath": "C:\\Users\\SKY\\Desktop\\Sky\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SKY\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\SKY\\Desktop\\SKY\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\SKY\\Desktop\\Sky\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SKY\\Desktop\\SKY\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\SKY\\Desktop\\Sky\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\SKY\\Desktop\\SKY\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\SKY\\Desktop\\Sky\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\SKY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SKY\\Desktop\\SKY\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\SKY\\Desktop\\Sky\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SKY\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -84,11 +84,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj"
+              "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj"
               },
-              "C:\\Users\\SKY\\Desktop\\SKY\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\SKY\\Desktop\\SKY\\Entities\\Entities.csproj"
+              "C:\\Users\\SKY\\Desktop\\Sky\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\SKY\\Desktop\\Sky\\Entities\\Entities.csproj"
               }
             }
           }
@@ -143,14 +143,14 @@
         }
       }
     },
-    "C:\\Users\\SKY\\Desktop\\SKY\\Entities\\Entities.csproj": {
+    "C:\\Users\\SKY\\Desktop\\Sky\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SKY\\Desktop\\SKY\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\SKY\\Desktop\\Sky\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\SKY\\Desktop\\SKY\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\SKY\\Desktop\\Sky\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\SKY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SKY\\Desktop\\SKY\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\SKY\\Desktop\\Sky\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SKY\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -165,8 +165,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\SKY\\Desktop\\SKY\\Core\\Core.csproj"
+              "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\SKY\\Desktop\\Sky\\Core\\Core.csproj"
               }
             }
           }

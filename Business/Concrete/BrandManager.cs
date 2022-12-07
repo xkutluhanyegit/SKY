@@ -32,7 +32,7 @@ namespace Business.Concrete
         public IDataResult<List<Brand>> GetAll()
         {
             var result = _brandDal.GetAll();
-            return new SuccessDataResult<List<Brand>>(Messages.ListedMessage);
+            return new SuccessDataResult<List<Brand>>(result,Messages.ListedMessage);
         }
 
         public IDataResult<Brand> GetById(int id)
