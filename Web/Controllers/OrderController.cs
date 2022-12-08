@@ -31,6 +31,12 @@ namespace Web.Controllers
         [Route("is-emri-listesi")]
         public IActionResult Index()
         {
+            var res = _orderService.GetOrderListDty();
+            
+            if (res.Success)
+            {
+              return View(res.Data);
+            }
             return View();
         }
 
@@ -49,12 +55,27 @@ namespace Web.Controllers
         [HttpPost]    
         public IActionResult Add(Order order)
         {
+          order.sCount = order.s28+order.s30+order.s32+order.s34+order.s36+order.s38+order.s40+order.s42+order.s44+order.s46+order.s48+order.s50;
+          order.kCount = order.k28+order.k30+order.k32+order.k34+order.k36+order.k38+order.k40+order.k42+order.k44+order.k46+order.k48+order.k50;
           var res = _orderService.Add(order);
             if (res.Success)
             {
                 return RedirectToAction("index","order");
             }
           return View(order);
+        }
+
+        [Route("is-emri-detay")]
+        [HttpGet]
+        public IActionResult detail(int id)
+        {
+          var res = _orderService.GetById(id);
+          if (res.Success)
+          {
+            return View(res.Data);
+          }
+          //TODO: Implement Realistic Implementation
+          return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(EfDbContext))]
-    [Migration("20221206132728_def")]
-    partial class def
+    [Migration("20221208124328_sky")]
+    partial class sky
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -76,18 +76,15 @@ namespace DataAccess.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Color")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Deadline")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Inch")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Model")
@@ -95,24 +92,21 @@ namespace DataAccess.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PackageType")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PhotoPath")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ProductDate")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("WashType")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("brandid")
+                    b.Property<int>("brandId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("customerid")
+                    b.Property<int>("customerId")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("k28")
@@ -190,7 +184,7 @@ namespace DataAccess.Migrations
                     b.Property<int>("s50")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("sCount")
+                    b.Property<int>("sCount")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("status")
@@ -198,30 +192,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("brandid");
-
-                    b.HasIndex("customerid");
-
                     b.ToTable("orders");
-                });
-
-            modelBuilder.Entity("Entities.Concrete.Order", b =>
-                {
-                    b.HasOne("Entities.Concrete.Brand", "brand")
-                        .WithMany()
-                        .HasForeignKey("brandid")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Entities.Concrete.Customer", "customer")
-                        .WithMany()
-                        .HasForeignKey("customerid")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("brand");
-
-                    b.Navigation("customer");
                 });
 #pragma warning restore 612, 618
         }

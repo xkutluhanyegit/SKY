@@ -9,16 +9,15 @@ namespace Entities.Concrete
     public class Order:IEntity
     {
         public int id { get; set; }
-        public Customer customer { get; set; }
-        public Brand brand { get; set; }
+        public int customerId { get; set; }
+        public int brandId { get; set; }
         public string Model { get; set; }
-
-        public string Color { get; set; }
-        public string Inch { get; set; }
-        public string PackageType { get; set; }
-        public string WashType { get; set; }
-        public string ProductDate { get; set; }        
-        public string Deadline { get; set; }
+        public string? Color { get; set; }
+        public string? Inch { get; set; }
+        public string? PackageType { get; set; }
+        public string? WashType { get; set; }
+        public string? ProductDate { get; set; }        
+        public string? Deadline { get; set; }
         public bool status { get; set; } = true;
         public string? Description { get; set; }
         public string? PhotoPath { get; set; }
@@ -205,7 +204,7 @@ namespace Entities.Concrete
             set { _s50 = value; }
         }
 
-        public int? sCount { get; set; }
+        public int sCount { get; set; }
 
 
         //Cut Dist

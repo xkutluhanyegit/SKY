@@ -7,6 +7,7 @@ using Business.Constant;
 using Core.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace Business.Concrete
 {
@@ -39,6 +40,12 @@ namespace Business.Concrete
         {
             var result = _orderDal.Get(o=>o.id == id);
             return new SuccessDataResult<Order>(result);
+        }
+
+        public IDataResult<List<OrderListDto>> GetOrderListDty()
+        {
+            var result = _orderDal.GetOrderListDto();
+            return new SuccessDataResult<List<OrderListDto>>(result);
         }
 
         public IResult Update(Order order)

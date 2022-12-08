@@ -4,7 +4,7 @@
 
 namespace DataAccess.Migrations
 {
-    public partial class def : Migration
+    public partial class sky : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -45,15 +45,15 @@ namespace DataAccess.Migrations
                 {
                     id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    customerid = table.Column<int>(type: "INTEGER", nullable: false),
-                    brandid = table.Column<int>(type: "INTEGER", nullable: false),
+                    customerId = table.Column<int>(type: "INTEGER", nullable: false),
+                    brandId = table.Column<int>(type: "INTEGER", nullable: false),
                     Model = table.Column<string>(type: "TEXT", nullable: false),
-                    Color = table.Column<string>(type: "TEXT", nullable: false),
-                    Inch = table.Column<string>(type: "TEXT", nullable: false),
-                    PackageType = table.Column<string>(type: "TEXT", nullable: false),
-                    WashType = table.Column<string>(type: "TEXT", nullable: false),
-                    ProductDate = table.Column<string>(type: "TEXT", nullable: false),
-                    Deadline = table.Column<string>(type: "TEXT", nullable: false),
+                    Color = table.Column<string>(type: "TEXT", nullable: true),
+                    Inch = table.Column<string>(type: "TEXT", nullable: true),
+                    PackageType = table.Column<string>(type: "TEXT", nullable: true),
+                    WashType = table.Column<string>(type: "TEXT", nullable: true),
+                    ProductDate = table.Column<string>(type: "TEXT", nullable: true),
+                    Deadline = table.Column<string>(type: "TEXT", nullable: true),
                     status = table.Column<bool>(type: "INTEGER", nullable: false),
                     Description = table.Column<string>(type: "TEXT", nullable: true),
                     PhotoPath = table.Column<string>(type: "TEXT", nullable: true),
@@ -69,7 +69,7 @@ namespace DataAccess.Migrations
                     s46 = table.Column<int>(type: "INTEGER", nullable: false),
                     s48 = table.Column<int>(type: "INTEGER", nullable: false),
                     s50 = table.Column<int>(type: "INTEGER", nullable: false),
-                    sCount = table.Column<int>(type: "INTEGER", nullable: true),
+                    sCount = table.Column<int>(type: "INTEGER", nullable: false),
                     k28 = table.Column<int>(type: "INTEGER", nullable: false),
                     k30 = table.Column<int>(type: "INTEGER", nullable: false),
                     k32 = table.Column<int>(type: "INTEGER", nullable: false),
@@ -87,41 +87,19 @@ namespace DataAccess.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_orders", x => x.id);
-                    table.ForeignKey(
-                        name: "FK_orders_brands_brandid",
-                        column: x => x.brandid,
-                        principalTable: "brands",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_orders_customers_customerid",
-                        column: x => x.customerid,
-                        principalTable: "customers",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_orders_brandid",
-                table: "orders",
-                column: "brandid");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_orders_customerid",
-                table: "orders",
-                column: "customerid");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "orders");
-
-            migrationBuilder.DropTable(
                 name: "brands");
 
             migrationBuilder.DropTable(
                 name: "customers");
+
+            migrationBuilder.DropTable(
+                name: "orders");
         }
     }
 }
