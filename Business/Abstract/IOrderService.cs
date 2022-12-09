@@ -15,6 +15,8 @@ namespace Business.Abstract
         IDataResult<Order> GetById(int id);
         IResult Delete(int id);
         IResult Update(Order order);
-        IDataResult<List<OrderListDto>> GetOrderListDty();
+        IDataResult<List<OrderListDto>> GetOrderListDto();
+        IDataResult<OrderDetailDto> GetOrderDetailDto(int id);
+        
     }
 }

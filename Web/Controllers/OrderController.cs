@@ -31,7 +31,7 @@ namespace Web.Controllers
         [Route("is-emri-listesi")]
         public IActionResult Index()
         {
-            var res = _orderService.GetOrderListDty();
+            var res = _orderService.GetOrderListDto();
             
             if (res.Success)
             {
@@ -69,7 +69,8 @@ namespace Web.Controllers
         [HttpGet]
         public IActionResult detail(int id)
         {
-          var res = _orderService.GetById(id);
+          var res = _orderService.GetOrderDetailDto(id);
+          
           if (res.Success)
           {
             return View(res.Data);

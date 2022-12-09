@@ -42,7 +42,13 @@ namespace Business.Concrete
             return new SuccessDataResult<Order>(result);
         }
 
-        public IDataResult<List<OrderListDto>> GetOrderListDty()
+        public IDataResult<OrderDetailDto> GetOrderDetailDto(int id)
+        {
+            var result = _orderDal.OrderDetailGetById(id);
+            return new SuccessDataResult<OrderDetailDto>(result);
+        }
+
+        public IDataResult<List<OrderListDto>> GetOrderListDto()
         {
             var result = _orderDal.GetOrderListDto();
             return new SuccessDataResult<List<OrderListDto>>(result);

@@ -1,1 +1,172 @@
-<h1>Detail Page</h1>
+@model Entities.DTOs.OrderDetailDto
+<div class="card-body">
+    <div class="card-header">
+        <div class="row">
+            <div class="col border-bottom">
+                <h1>@Model.CustomerName | @Model.BrandName | @Model.Model</h1>
+            </div>
+        </div>
+        <div class="row mt-3 border-bottom">
+            <div class="col-md-3 float-left">
+                <div class="">
+                    <p><strong>Müşteri: </strong>@Model.CustomerName</p>
+                    <p><strong>Marka: </strong>@Model.BrandName</p>
+                    <p><strong>Model: </strong>@Model.Model</p>
+                </div>
+            </div>
+            <div class="col-md-3 float-left">
+                <div class="">
+                    <p><strong>Renk: </strong>@Model.Color | <strong>Boy: </strong>@Model.Inch</p>
+                    <p><strong>Yıkama: </strong>@Model.WashType</p>
+                    <p><strong>Paket: </strong>@Model.PackageType</p>
+                </div>
+            </div>
+            <div class="col-md-3 float-left">
+                <div class="">
+                    <p><strong>Üretim Tarihi: </strong>@Model.ProductDate</p>
+                    <p><strong>Termin Tarihi: </strong>@Model.Deadline</p>
+                    <p><strong>Açıklama: </strong>@Model.Description</p>
+                </div>
+            </div>
+            <div class="col-md-3 float-left">
+                <div class="">
+                    <p><strong>Resim: </strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <div class="row border-bottom">
+                    <div class="col">
+                        <h4 class="text-center">Kesim Beden Dağılımı</h4>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">28/2XS</h6>
+                            <p class="text-center">@Model.k28</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">30/XS</h6>
+                            <p class="text-center">@Model.k30</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">32/S</h6>
+                            <p class="text-center">@Model.k32</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">34/M</h6>
+                            <p class="text-center">@Model.k34</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">36/L</h6>
+                            <p class="text-center">@Model.k36</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">38/XL</h6>
+                            <p class="text-center">@Model.k38</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">40/2XL</h6>
+                            <p class="text-center">@Model.k40</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">42/3XL</h6>
+                            <p class="text-center">@Model.k42</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">44</h6>
+                            <p class="text-center">@Model.k44</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">46</h6>
+                            <p class="text-center">@Model.k46</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">48</h6>
+                            <p class="text-center">@Model.k48</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">50</h6>
+                            <p class="text-center">@Model.k50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row border-bottom">
+                    <div class="col">
+                        <h4 class="text-center">Kesim Beden Dağılımı</h4>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">28/2XS</h6>
+                            <p class="text-center">@Model.k28</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">30/XS</h6>
+                            <p class="text-center">@Model.k30</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">32/S</h6>
+                            <p class="text-center">@Model.k32</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">34/M</h6>
+                            <p class="text-center">@Model.k34</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">36/L</h6>
+                            <p class="text-center">@Model.k36</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">38/XL</h6>
+                            <p class="text-center">@Model.k38</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">40/2XL</h6>
+                            <p class="text-center">@Model.k40</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">42/3XL</h6>
+                            <p class="text-center">@Model.k42</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">44</h6>
+                            <p class="text-center">@Model.k44</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">46</h6>
+                            <p class="text-center">@Model.k46</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">48</h6>
+                            <p class="text-center">@Model.k48</p>
+                        </div>
+                        <div class="col-3 float-left">
+                            <h6 class="text-center border-bottom">50</h6>
+                            <p class="text-center">@Model.k50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

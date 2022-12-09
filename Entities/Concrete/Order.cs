@@ -388,7 +388,7 @@ namespace Entities.Concrete
             set { _k50 = value; }
         }
 
-        public int? kCount { get; set; }
+        public int kCount { get; set; }
 
 
     }
