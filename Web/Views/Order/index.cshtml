@@ -9,6 +9,7 @@
             <thead class="table-dark">
                 <tr>
                     <th>#</th>
+                    <th>Durum</th>
                     <th>Müşteri</th>
                     <th>Marka</th>
                     <th>Model</th>
@@ -20,19 +21,36 @@
             </thead>
             <tbody class="table-hover">
                 @{
-                    int i=1;
+                    int i = 1;
                     foreach (var item in Model)
                     {
-                        <tr>
-                            <td style="width: 50px;">@i</td>
-                            <td>@item.CustomerName</td>
-                            <td>@item.BrandName</td>
-                            <td>@item.OrderModel</td>
-                            <td>@item.OrderColor</td>
-                            <td>@item.OrderQTY</td>
-                            <td>@item.OrderDeadline</td>
-                            <td style="width: 50px;"><a asp-controller="order" asp-action="detail" asp-route-id="@item.OrderId"><i class="fas fa-chevron-right"></i></a></td>
-                        </tr>
+                        if (item.OrderStatus)
+                        {
+                            <tr class="text-center">
+
+                                <td style="width: 50px;">@i</td>
+                                @if (item.OrderStatus)
+                                {
+                                    <td style="width: 30px;">
+                                        <span class="status-true">●</span>
+                                    </td>
+                                }
+                                else{
+                                     <td style="width: 30px;">
+                                        <span class="status-false">●</span>
+                                    </td>
+                                }
+                                <td>@item.CustomerName</td>
+                                <td>@item.BrandName</td>
+                                <td>@item.OrderModel</td>
+                                <td>@item.OrderColor</td>
+                                <td>@item.OrderQTY</td>
+                                <td>@item.OrderDeadline</td>
+                                <td style="width: 50px;"><a asp-controller="order" asp-action="detail"
+                            asp-route-id="@item.OrderId"><i class="fas fa-chevron-right"></i></a></td>
+                            </tr>
+                        }
+
                         i++;
                     }
                 }
@@ -41,6 +59,7 @@
             <tfoot class="table-dark">
                 <tr>
                     <th>#</th>
+                    <th>Durum</th>
                     <th>Müşteri</th>
                     <th>Marka</th>
                     <th>Model</th>

@@ -16,5 +16,7 @@ namespace Entities.DTOs
         public string OrderColor { get; set; }
         public int OrderQTY { get; set; }
         public string OrderDeadline { get; set; }
+        
+        public bool OrderStatus { get; set; }
     }
 }

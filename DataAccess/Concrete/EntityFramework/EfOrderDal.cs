@@ -30,7 +30,9 @@ namespace DataAccess.Concrete.EntityFramework
                                     OrderColor = o.Color,
                                     OrderDeadline = o.Deadline,
                                     OrderQTY = o.sCount,
-                                    OrderId = o.id
+                                    OrderId = o.id,
+                                    OrderStatus = o.status
+                                    
                                 };
                 return orderList.ToList();
             }
